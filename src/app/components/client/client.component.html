@@ -1,0 +1,46 @@
+<div class="container">
+
+    <form [formGroup]="clientForm" (ngSubmit)="printForm()">
+
+        <div class="card my-3">
+            <div class="card-body">
+                <h6 class="card-title display-6">
+                    We just need some basic information
+                </h6>
+                <div class="row my-3">
+                    <div class="col-md-6 form-group mb-2">
+                        <label for="first-name">First Name: </label>
+                        <input class="form-control" id="first-name" type="text"
+                        formControlName="clientFirstName">
+                    </div>
+                    <div class="col-md-6 form-group mb-2">
+                        <label for="last-name">Last Name: </label>
+                        <input class="form-control" id="last-name" type="text"
+                        formControlName="clientLastName">
+                    </div>
+                    
+                    <div class="col-md-12 form-group  mb-2">
+                        <label for="email">Email: </label>
+                        <input class="form-control" id="email" type="text"
+                        formControlName="clientEmail">
+                    </div>
+                    
+                    
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-6 form-group mb-2">
+                        <label for="phone-number">Phone Number: </label>
+                        <input class="form-control" id="phone-number" type="text"
+                        formControlName="clientPhoneNumber">
+                    </div>  
+                </div>
+                
+                <div class="row m-0 form-group ">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</div>
