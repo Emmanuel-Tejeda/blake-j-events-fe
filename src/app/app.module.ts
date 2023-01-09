@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { BookingComponent } from './components/booking/booking.component';
 import { MobDirective } from 'src/directives/mask';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MobDirective } from 'src/directives/mask';
     NgbCarouselModule,
     NgIf,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
