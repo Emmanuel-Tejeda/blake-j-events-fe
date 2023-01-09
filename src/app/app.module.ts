@@ -10,6 +10,7 @@ import { ClientComponent } from './components/client/client.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { BookingComponent } from './components/booking/booking.component';
+import { MobDirective } from 'src/directives/mask';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { BookingComponent } from './components/booking/booking.component';
     HomeComponent,
     ClientComponent,
     BookingComponent,
+    MobDirective
   ],
   imports: [
     BrowserModule,

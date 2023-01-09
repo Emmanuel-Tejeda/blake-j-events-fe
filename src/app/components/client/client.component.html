@@ -30,13 +30,15 @@
                 <div class="row my-3">
                     <div class="col-md-6 form-group mb-2">
                         <label for="phone-number">Phone Number: </label>
-                        <input class="form-control" id="phone-number" type="text"
-                        formControlName="clientPhoneNumber">
+                        <input mobMask class="form-control" id="phone-number" type="tel"
+                            placeholder="###-###-####"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                            formControlName="clientPhoneNumber" required>
                     </div>  
                 </div>
                 
                 <div class="row m-0 form-group ">
-                    <button class="btn btn-success" type="submit">Submit</button>
+                    <button class="btn btn-success" [disabled]="!clientForm.valid" type="submit">Submit</button>
                 </div>
 
             </div>

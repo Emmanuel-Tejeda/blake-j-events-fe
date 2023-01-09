@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl,FormGroup } from '@angular/forms';
+import { FormControl,FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-client',
@@ -7,6 +7,7 @@ import { FormControl,FormGroup } from '@angular/forms';
   styleUrls: ['./client.component.css']
 })
 export class ClientComponent {
+
 
   clientForm = new FormGroup({
     
